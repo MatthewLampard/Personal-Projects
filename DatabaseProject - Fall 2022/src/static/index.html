@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.csss">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Manager</title>
+</head>
+<body>
+    <form>
+        <h3>New User:</h3>
+        <label for="">Username:</label>
+        <input type="text" id="Username">
+        <br>
+        <label for="">Height:</label>
+        <input type="text" name="" id="height">
+        <br>
+        <label for="">Weight:</label>
+        <input type="text" id="weight">
+        <br>
+        <label for="">Age:</label>
+        <input type="text" name="" id="Age">
+        <br>
+        <label for="">Gender:</label>
+        <input type="text" id="gender">
+        <br>
+        <label for="">Goal:</label>
+        <input type="text" name="" id="goal">
+        <br>
+        <label for="">Location:</label>
+        <input type="text" name="" id="location">
+        <br>
+        <label for="">Gym Name:</label>
+        <input type="text" id="gymName">
+        <br>
+        <label for="">Gym Type:</label>
+        <input type="text" name="" id="gymType">
+        <br>
+    </form>
+    <button onclick="AddUser()">Add User</button>
+<br>
+    <form>
+        <h3>Edit User Information:</h3>        
+        <label for="">User ID:</label>
+        <input type="text" id="muserID">
+        <br>
+        <label for="">New Goal:</label>
+        <input type="text" id="newGoal">
+        <br>
+        <label for="">New Weight:</label>
+        <input type="text" name="" id="newWeight">
+        <br>
+        <label for="">New Age:</label>
+        <input type="text" id="newAge">
+        <br>
+        <label for="">New Gym Name:</label>
+        <input type="text" id="newGymName">
+        <br>
+        <label for="">New Gym Type:</label>
+        <input type="text" id="newGymType">
+        <br>
+        <label for="">New Location:</label>
+        <input type="text" name="" id="newLocation">
+        <br>
+    </form>
+    <button onclick="EditUser()">Modify User</button>
+<br>
+    <form action="">
+        <h3>Calculate calories from a workout:</h3>
+        <label for="">User ID:</label>
+        <input type="text" name="" id="cuserID">
+        <br>
+        <label for="">Workout ID:</label>
+        <input type="text" name="" id="cworkoutID">
+        <br>
+    </form>
+    <button onclick="GetCal()">Get aproximate calories</button>
+    <ul id="cal"></ul>
+    <br>
+    <form action="">
+        <h3>Recomend equipment:</h3>
+        <label for="">User ID:</label>
+        <input type="text" name="" id="ruserID">
+        <br>
+        <label for="">Muscle Name:</label>
+        <input type="text" name="" id="muscleName">
+        <br>
+    </form>
+    <button onclick="RecomendEquipment()">Recomend equipment</button>
+    <ul id="rec"></ul>
+    <br>
+    <form action="">
+        <h3>Make Workout:</h3>
+        <label for="">User ID:</label>
+        <input type="text" id="wuserID">
+        <br>
+        <label for="">Muscle Group:</label>
+        <input type="text" name="" id="muscleGroup">
+        <br>
+    </form>
+    <button onclick="MakeWorkout()">Auto Make workout</button>
+    <br>
+    <form action="">
+        <h3>Calculate time for workout:</h3>
+        <label for="">Workout ID:</label>
+        <input type="text" name="" id="tworkoutID">
+        <br>
+    </form>
+    <button onclick="CalcTime()">Calculate time</button>
+    <ul id="cTime"></ul>
+    <br>
+    <form action="">
+        <h3>Find Value machines:</h3>
+    </form>
+    <button onclick="ValueMachine()">Find machines</button>
+    <ul id="vMachines"></ul>
+    <br>
+    <form>
+        <h3>See Popular machines:</h3>
+    </form>
+    <button onclick="PopularMachines()">Popular machines</button>
+    <ul id="pMachines"></ul>
+</body>
+</html>
